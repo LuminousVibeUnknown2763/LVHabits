@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>LV Habits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <nav>
+    <div>
+      <a href='#home'id='homeAnchor'></a>
+      <a href='#rank' id='rankAnchor'></a>
+	   <a href='#checkList'id='checkListAnchor'></a>
+      <button id='toggleThemeBtn'class='toggleThemeBtn'onclick='toggleTheme()'></button>
+    </div>
+  </nav>
+
+  <section class='home'id='home'>
+    <div class='logo'>LV habits</div>
+    <h1>LuminousVibe Habits</h1>
+  </section>
+
+  <section id='rank'>
+    <svg id='userIcon'xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" style="width: 70px; height: 70px; flex-shrink: 0; transition: all 0.3s ease;">
+  <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0Zm-5-2a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM8 9c-1.825 0-3.422.977-4.295 2.437A5.49 5.49 0 0 0 8 13.5a5.49 5.49 0 0 0 4.294-2.063A4.997 4.997 0 0 0 8 9Z" clip-rule="evenodd" /></svg>
+    <h1 id='levelDs'>Level - 0</h1>
+    <p id='xpDs'>xp - 0</p>
+  </section>
+
+  <section id='checkList'>
+    <h1>Check List</h1>
+    <form onsubmit='addTask(); return false;'>
+      <input placeholder='Enter Task...'id='taskInput' class='taskIn'required>
+    </form>
+    <div id='taskHold'></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
